@@ -14,18 +14,29 @@ export class ObservableCompoComponent implements OnInit, AfterContentInit {
     { title: 'ironmen', description: 'ironmen description' },
   ];
 
-  /*------ convert Array to Observables ------*/
+  /**
+   * convert Array to Observables
+   * @param postArray
+   */
   postArrayObservable$ = from(this.postArray);
 
-  /*------ create promise and set setTimeOut to send data in 3 second ------*/
+  /**
+   * create promise and set setTimeOut to send data in 3 second
+   * @label setTimeout
+   */
   promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('Resolve the promise. sending data')
     }, 3000)
   })
 
-  /*------ convert Promise to Observables ------*/
+
+  /**
+   * convert Promise to Observables
+   * @param Promise
+   */
   PromiseObservable$ = from(this.promise);
+
 
   constructor() {
     // call method for Observable
@@ -43,8 +54,10 @@ export class ObservableCompoComponent implements OnInit, AfterContentInit {
     });
   }
 
+
   ngOnInit(): void {
   }
+
 
   ngAfterContentInit() {
     /*------------ DOM Event Handler convert to observable ----------*/
