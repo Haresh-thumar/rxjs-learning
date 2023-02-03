@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BehivourSubjectComponent implements OnInit {
 
   /*----- Custom Init Value in Subject -----*/
-  // subjectValue: string = 'Haresh';
+  subjectValue: string = 'Haresh';
 
   /*----- ByDefault Init Value set From Service File Using Behivour-Subject ------*/
   BehivourSubjectValue!: string;
@@ -18,7 +18,7 @@ export class BehivourSubjectComponent implements OnInit {
 
   ngOnInit(): void {
     /*---- Subject Value get From Service File ----*/
-    // this._designUtility.subjectValue.subscribe((res) => this.subjectValue = res);
+    this._designUtility.subjectValue.subscribe((res) => this.subjectValue = res);
 
     /*---- Subject Value get From Service File ----*/
     this._designUtility.BehivourSubjectValue.subscribe((res) => this.BehivourSubjectValue = res);

@@ -20,16 +20,20 @@ export class Compo2Component implements OnInit {
     this._designUtility.BehivourSubjectValue.subscribe((res) => this.BehivourSubjectValue = res);
   }
 
-  onChange(uname: any) {
+  subjectChange(uname: any) {
     console.log(uname.value);
     /*---- Response Assign in Subject Value ----*/
     this.subjectValue = uname.value;
 
-    /*---- Response Assign in Behivour-Subject Value ----*/
-    this.BehivourSubjectValue = uname.value;
-
     /*---- Subject Value get From Service File ----*/
     this._designUtility.subjectValue.next(uname.value);
+  }
+
+  bhvSubjectChange(uname: any) {
+    console.log(uname.value);
+
+    /*---- Response Assign in Behivour-Subject Value ----*/
+    this.BehivourSubjectValue = uname.value;
 
     /*---- Subject Value get From Service File ----*/
     this._designUtility.BehivourSubjectValue.next(uname.value);

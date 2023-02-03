@@ -1,11 +1,14 @@
 <div class="card">
   <div class="card-header text-danger">
-    App-Compo-1
+    Child Component 1
   </div>
   <div class="card-body">
     <h3 class="card-title">Subject Value : <span class="text-primary">{{subjectValue}}</span></h3>
     <h3 class="card-title">Behivour-Subject Value : <span class="text-primary">{{BehivourSubjectValue}}</span></h3>
     <input type="text" class="form-control mt-0 mb-4" placeholder="Enter Name" #uname>
-    <button class="btn btn-success" (click)="onChange(uname)">Change</button>
+    <div class="d-flex align-items-center justify-content-between">
+      <button class="btn btn-success btn-sm" (click)="subjectChange(uname)">subject</button>
+      <button class="btn btn-warning btn-sm" (click)="bhvSubjectChange(uname)">Behivour Subject</button>
+    </div>
   </div>
 </div>
