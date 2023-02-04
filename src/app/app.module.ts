@@ -15,6 +15,7 @@ import { BehivourSubjectComponent } from './behivour-subject/behivour-subject.co
 import { Compo1Component } from './behivour-subject/compo1/compo1.component';
 import { Compo2Component } from './behivour-subject/compo2/compo2.component';
 import { Compo3Component } from './behivour-subject/compo3/compo3.component';
+import { PromiseComponent } from './promise/promise.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { Compo3Component } from './behivour-subject/compo3/compo3.component';
     Compo1Component,
     Compo2Component,
     Compo3Component,
+    PromiseComponent,
   ],
   imports: [
     BrowserModule,

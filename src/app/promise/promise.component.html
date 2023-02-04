@@ -1,0 +1,30 @@
+<h1>Promise</h1>
+
+<br>
+
+<ul>
+  <li>Promise is Always Async</li>
+  <li>Return Single Value [ Resolve(yes) || Reject(no) ]</li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+<button mat-raised-button color="primary" (click)="myFunction()"> Click Me</button>
+
+<br><br>
+<hr>
+<br><br>
+
+<p *ngIf="promiseValueColor">Promise Available Value :
+  <strong [ngClass]="{'text-primary' : promiseValueColor === true}">
+    {{promiseAvailValue?.brand}}, {{promiseAvailValue?.hardDisk}}, {{promiseAvailValue?.color}}
+  </strong>
+</p>
+
+<p *ngIf="!promiseValueColor">Promise Not Available Value :
+  <strong [ngClass]="{'text-danger' : promiseValueColor === false}">
+    {{promiseNotAvailValue?.brand}}, {{promiseNotAvailValue?.status}}
+  </strong>
+</p>
