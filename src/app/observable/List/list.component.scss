@@ -1,0 +1,36 @@
+ul.list {
+  list-style-type: none;
+  margin: 40px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(23% - 10px);
+    margin: 15px;
+    cursor: pointer;
+
+    a {
+      background: #f0f0f0;
+      color: #6296bb;
+      border-radius: 5px;
+      width: 100%;
+      text-align: center;
+      transition: .3s ease all;
+      line-height: 1;
+      font-size: 18px;
+      min-height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: #e3f2fd;
+        color: #477698;
+        box-shadow: 0 0 10px #b3cada;
+        text-decoration: none;
+        border: 1px solid #6296bb;
+      }
+    }
+  }
+}
