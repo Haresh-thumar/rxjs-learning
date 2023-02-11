@@ -2,9 +2,9 @@ import { AfterContentInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, from, fromEvent } from 'rxjs';
 
 @Component({
-  selector: 'app-observable-compo',
-  templateUrl: './observable-compo.component.html',
-  styleUrls: ['./observable-compo.component.scss']
+  selector: 'app-observable',
+  templateUrl: './observable.component.html',
+  styleUrls: ['./observable.component.scss']
 })
 export class ObservableCompoComponent implements OnInit, AfterContentInit {
 
