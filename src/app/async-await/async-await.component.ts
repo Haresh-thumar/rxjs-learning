@@ -1,3 +1,4 @@
+import { AsyncAwaitFetchApiService } from './../services/async-await-fetch-api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsyncAwaitComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Api: AsyncAwaitFetchApiService) { }
 
   ngOnInit(): void {
     /*--- Async ---*/
@@ -15,6 +16,9 @@ export class AsyncAwaitComponent implements OnInit {
 
     /*--- Await ---*/
     this.getPromiseData();
+
+    /*--- Fetch Api From Service ---*/
+    this.getDataFromApi();
   }
 
   /*************************************************************************************
@@ -39,7 +43,6 @@ export class AsyncAwaitComponent implements OnInit {
   });
   async getPromiseData() {
     let response = await this.promise;
-    console.log(response);
   }
 
 
@@ -85,6 +88,42 @@ export class AsyncAwaitComponent implements OnInit {
     this.result2 = 'Fetching Data';
     let data = await this.buyLaptop2;
     this.result2 = JSON.stringify(data);
+  }
+
+
+  /*************************************************************************************
+                                  With Async/Await
+  *************************************************************************************/
+  result3: any[] = ['Data'];
+
+  buyLaptop4: any[] = [];
+
+  getDataFromApi() {
+    this.Api.getData().subscribe({
+      next: (res) => {
+        this.buyLaptop4.push(res);
+      },
+      error: (err) => {
+        console.error("loss data");
+      },
+      complete: () => {
+        alert("Data Collect");
+      }
+    });
+  }
+
+  buyLaptop5 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(this.buyLaptop4);
+    }, 10000);
+  });
+
+  async fetch3() {
+    this.result3 = ['Fetching Data...'];
+    let data = await this.buyLaptop5;
+    this.result3 = [];
+    this.result3.push(JSON.stringify(data));
+    alert("Data Received SuccessFully...!");
   }
 
 
