@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,7 @@ import { Compo1Component } from './behivour-subject/compo1/compo1.component';
 import { Compo2Component } from './behivour-subject/compo2/compo2.component';
 import { Compo3Component } from './behivour-subject/compo3/compo3.component';
 import { PromiseComponent } from './promise/promise.component';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { PromiseComponent } from './promise/promise.component';
     Compo2Component,
     Compo3Component,
     PromiseComponent,
+    AsyncAwaitComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    HttpClientModule,
     MatIconModule,
     MatButtonModule,
     MatBadgeModule
