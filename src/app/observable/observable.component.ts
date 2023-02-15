@@ -6,7 +6,7 @@ import { Observable, from, fromEvent } from 'rxjs';
   templateUrl: './observable.component.html',
   styleUrls: ['./observable.component.scss']
 })
-export class ObservableCompoComponent implements OnInit, AfterContentInit {
+export class ObservableComponent implements OnInit, AfterContentInit {
 
   ngOnInit(): void { }
 

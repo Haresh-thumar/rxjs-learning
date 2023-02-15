@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ObservableCompoComponent } from './observable/observable.component';
 import { SubjectComponent } from './subject/subject.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,11 +17,12 @@ import { Compo2Component } from './behivour-subject/compo2/compo2.component';
 import { Compo3Component } from './behivour-subject/compo3/compo3.component';
 import { PromiseComponent } from './promise/promise.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
+import { ObservableComponent } from './observable/observable.component';
+import { ObservableModule } from './observable/observable.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ObservableCompoComponent,
     SubjectComponent,
     HeaderComponent,
     BehivourSubjectComponent,
@@ -31,6 +31,7 @@ import { AsyncAwaitComponent } from './async-await/async-await.component';
     Compo3Component,
     PromiseComponent,
     AsyncAwaitComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { AsyncAwaitComponent } from './async-await/async-await.component';
     HttpClientModule,
     MatIconModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    ObservableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
