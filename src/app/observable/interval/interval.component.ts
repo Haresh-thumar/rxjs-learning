@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription, interval, timer } from 'rxjs';
-import { FromEventService } from 'src/app/services/from-event.service';
+import { UtilityOperatorService } from 'src/app/services/utility-operator.service';
 
 @Component({
   selector: 'app-interval',
@@ -14,7 +14,7 @@ export class IntervalComponent implements OnInit {
   /*--- Create Subscription ---*/
   videoSubscription!: Subscription;
 
-  constructor(private fromEvt: FromEventService) { }
+  constructor(private _UlUtility: UtilityOperatorService) { }
 
   ngOnInit(): void {
     /*-------------------------------------------------------------
@@ -28,9 +28,9 @@ export class IntervalComponent implements OnInit {
     // this.videoSubscription = broadCastInterval.subscribe(res => {
     //   this.obsMsg = 'Video ' + res;
     //   console.log(this.obsMsg);
-    //   this.fromEvt.printLi(this.obsMsg, 'userVideo1');
-    //   this.fromEvt.printLi(this.obsMsg, 'userVideo2');
-    //   this.fromEvt.printLi(this.obsMsg, 'userVideo3');
+    //   this._UlUtility.printLi(this.obsMsg, 'userVideo1');
+    //   this._UlUtility.printLi(this.obsMsg, 'userVideo2');
+    //   this._UlUtility.printLi(this.obsMsg, 'userVideo3');
 
     //   /*----- Observable Stream UnSubscribe -----*/
     //   if (res >= 5) {
@@ -49,9 +49,9 @@ export class IntervalComponent implements OnInit {
     this.videoSubscription = broadCastTimer.subscribe(res => {
       this.obsMsg = 'Video ' + res;
       console.log(this.obsMsg);
-      this.fromEvt.printLi(this.obsMsg, 'userVideo1');
-      this.fromEvt.printLi(this.obsMsg, 'userVideo2');
-      this.fromEvt.printLi(this.obsMsg, 'userVideo3');
+      this._UlUtility.printLi(this.obsMsg, 'userVideo1');
+      this._UlUtility.printLi(this.obsMsg, 'userVideo2');
+      this._UlUtility.printLi(this.obsMsg, 'userVideo3');
 
       /*----- Observable Stream UnSubscribe -----*/
       if (res >= 5) {

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { fromEvent } from 'rxjs';
-import { FromEventService } from 'src/app/services/from-event.service';
+import { UtilityOperatorService } from 'src/app/services/utility-operator.service';
 
 @Component({
   selector: 'app-from-event',
@@ -14,7 +14,7 @@ export class FromEventComponent implements OnInit, AfterViewInit {
    */
   @ViewChild('addList') addList!: ElementRef;
 
-  constructor(private fromeve: FromEventService) { }
+  constructor(private _utilityFunc: UtilityOperatorService) { }
 
   ngOnInit(): void { }
 
@@ -22,8 +22,8 @@ export class FromEventComponent implements OnInit, AfterViewInit {
     let count = 1;
     fromEvent(this.addList.nativeElement, 'click').subscribe(res => {
       let countVal = 'Video ' + count++;
-      this.fromeve.printLi(countVal, 'elContainer');
-      this.fromeve.printLi(countVal, 'elContainer2');
+      this._utilityFunc.printLi(countVal, 'elContainer');
+      this._utilityFunc.printLi(countVal, 'elContainer2');
     });
   }
 
