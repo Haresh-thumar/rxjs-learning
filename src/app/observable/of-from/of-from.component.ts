@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilityOperatorService } from '../../services/utility-operator.service';
-import { Observable, from, of } from 'rxjs';
+import { Observable, count, from, of } from 'rxjs';
 
 @Component({
   selector: 'app-of-from',
@@ -159,6 +159,21 @@ export class OfFromComponent implements OnInit {
       res.then(console.log('%c from Multiple Promises ', 'background: #33FF57; color: #000', res));
     });
 
+    /*---- Iterate Object and convert to Observable ----*/
+    const obj6: any = {
+      id: 1,
+      name: 'haresh',
+      work: 'coding',
+      place: 'HYD'
+    };
+    let populationArr1 = Object.entries(obj6);
+    const obsfrom8 = from(populationArr1);
+    obsfrom8.subscribe((res: any) => {
+      res.flatMap((num: any) => {
+        console.log('%c from Iterate Object ', 'background: #87CEEB; color: #000', num);
+      });
+    });
+
     /*---- Iterable Object to convert Observable -----*/
     let obj = {
       '0': 111,
@@ -174,12 +189,207 @@ export class OfFromComponent implements OnInit {
 
     /*---- HTMLCollection to convert Observable -----*/
     const liArr2 = document.getElementsByTagName('td');
-    const obsfrom8 = from(liArr);
-    obsfrom8.subscribe((res: any) => {
+    const obsfrom9 = from(liArr);
+    obsfrom9.subscribe((res: any) => {
       console.log('%c from HTMLCollection ', 'background: #FFFF00; color: #000', res);
     });
 
+    /*---- Generator to convert Observable -----*/
+    function* range(start: number, end: number) {
+      for (let i = start; i < end; i++) {
+        yield i;
+      }
+    }
+    const generator = from(range(1, 10));
+    generator.subscribe(res => {
+      console.log('%c from Generator ', 'background: #FF0000; color: #fff', res);
+    });
+
+    /*---- Observable to convert Observable -----*/
+    const obs = of(12, 26, 34, 48);
+    const obsrbl = from(obs);
+    obsrbl.subscribe((res: any) => {
+      console.log('%c from Observable ', 'background: #33FF57; color: #000', res);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /********************************************************************************************************************************
+                                                      Objects Properties
+     ********************************************************************************************************************************/
+    /*-------------------------------------------------------*/
+    const population: any = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    let populationArr = Object.entries(population);
+    console.log(populationArr);   // 0:['male', 4] 1:['female', 93] 2:['others', 10]
+
+
+    /*-------------------------------------------------------*/
+    const population1: any = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    // Iterate through the object
+    for (const key in population1) {
+      if (population1.hasOwnProperty(key)) {
+        console.log(`${key}: ${population1[key]}`);  // male: 4, female: 93, others: 10
+      }
+    }
+
+
+    /*-------------------------------------------------------*/
+    const population2: any = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    let genders = Object.keys(population2);
+    console.log(genders); // ["male","female","others"]
+
+
+    /*-------------------------------------------------------*/
+    const population3: any = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    let genders1 = Object.keys(population3);
+    genders1.forEach((gender) => {
+      console.log(`There are ${population[gender]} ${gender}`);
+      // There are 4 male
+      // There are 93 female
+      // There are 10 others
+    });
+
+
+    /*-------------------------------------------------------*/
+    const population4 = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    let totalPopulation = 0;
+    let genders2 = Object.keys(population4);
+    genders2.forEach((gender) => {
+      totalPopulation += population[gender];
+    });
+    console.log(totalPopulation); // 107
+
+
+    /*-------------------------------------------------------*/
+    const population5 = {
+      male: 4,
+      female: 93,
+      others: 10
+    };
+    let numbers = Object.values(population5);
+    console.log(numbers);   // [4,93,10]
+
+    let numbers1 = Object.values(population);
+    numbers1.forEach((number) => console.log(number)); // 4 93 10
+
+
+    /*-------------------------------------------------------*/
+    const obj2: any = { a: 1, b: 2, c: 3 };
+    for (const prop in obj2) {
+      console.log(`obj.${prop} = ${obj2[prop]}`);
+      // obj.a = 1
+      // obj.2 = 2
+      // obj.3 = 3
+    }
+
+
+    /*-------------------------------------------------------*/
+    const object1 = {
+      a: 1,
+      b: 2,
+      c: 3
+    };
+    console.log(Object.getOwnPropertyNames(object1));
+    // Expected output: Array ["a", "b", "c"]
+
+
+    /*-------------------------------------------------------*/
+    const obj4: any = { 0: "a", 1: "b", 2: "c" };
+    Object.getOwnPropertyNames(obj4).forEach((val, idx, array) => {
+      console.log(`${val} -> ${obj4[val]}`);
+    });
+    // 0 -> a
+    // 1 -> b
+    // 2 -> c
+
+
+    /*-------------------------------------------------------*/
+    const object2: any = {
+      id: 1,
+      name: 'haresh',
+      work: 'coding',
+      place: 'HYD'
+    };
+
+    for (let [key, value] of Object.entries(object2)) {
+      // console.log(key, value);
+      console.log(`key=${key} value=${value}`);
+      // key=id value=1
+      // key=name value=haresh
+      // key=work value=coding
+      // key=place value=HYD
+    }
+
+
+    /*-------------------------------------------------------*/
+    const anObj = { 100: 'a', 2: 'b', 7: 'c' };
+    Object.entries(anObj).map(obj => {
+      const key = obj[0];
+      const value = obj[1];
+      console.log(key, value);   // 2 b   7 c   100 a
+    });
+
+
+    /*-------------------------------------------------------*/
+    // Or, using array extras
+    const anObj2 = { 50: 'aa', 22: 'bb', 77: 'cc' };
+    Object.entries(anObj2).forEach(([key, value]) => {
+      console.log(`${key} ${value}`);    // 22 bb    50 aa   77 cc
+    });
+
+
+    /*-------------------------------------------------------*/
+    let obj5: any = {
+      prop1: '1',
+      prop2: '2'
+    };
+    for (let el in obj5) {
+      console.log(el);
+      console.log(obj5[el]);
+      // prop1
+      // 1
+      // prop2
+      // 2
+    }
+
+
   }
+
+
+
+
+
 
 
 
