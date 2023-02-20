@@ -1,35 +1,236 @@
-<h1>of() & From()</h1>
+<!-------------------------------------------------------------------
+                              of()
+-------------------------------------------------------------------->
+<h2 class="text-primary mt-3 mb-2">Example-1 <span class="text-danger">(of() operator)</span></h2>
+<div class="row">
+  <!----- Example-1 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Array</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of ('anup', 'shekhar', 'sharma')
+        </p>
+        <ul id="elContainer"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-2 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Object</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (&#123;a: 'Anup', b: 'Shekhar', c: 'Sharma'&#125;)
+        </p>
+        <ul>
+          <li><strong>a :</strong> {{obsMsg1.a}}</li>
+          <li><strong>b :</strong> {{obsMsg1.b}}</li>
+          <li><strong>c :</strong> {{obsMsg1.c}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-3 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">String</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of ('welcome')
+        </p>
+        <ul id="elContainer1"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-4 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Number</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of ([1,2,3,4,5])
+        </p>
+        <ul id="elContainer2"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-5 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Number, String & Array</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (100, [1, 2, 3, 4, 5, 6, 7],"Hello World")
+        </p>
+        <ul id="elContainer3"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-6 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Set</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (set)
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-7 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Promise</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (set)
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-8 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Observable</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (observable)
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-9 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">HTML Collection</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data :</strong>of (HTMLCollection)
+        </p>
+        <div>
+          <table class="table">
+            <tbody>
+              <td>hiii</td>
+              <td>hello</td>
+              <td>i am</td>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li class="text-danger">click to view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
 
 <!-------------------------------------------------------------------
-                              of()
+                              from()
 -------------------------------------------------------------------->
-<div>
-  <h2>Example-1 (of operator)</h2>
-  <hr>
-  <div class="row">
-    <!----- Example-1 ------>
-    <div class="col-md-6">
-      <p class="border rounded bg-light py-2 px-2">
-        <strong>Data :</strong>of ('anup', 'shekhar', 'sharma')
-      </p>
-      <hr>
-      <ul id="elContainer"></ul>
+<h2 class="text-primary mt-5 mb-2">Example-2 <span class="text-danger">(From() operator)</span></h2>
+<div class="row">
+  <!----- Example-1 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">String</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>String to Observable Convert
+        </p>
+        <ul id="elContainer4"></ul>
+      </div>
     </div>
-    <hr>
-    <!----- Example-2 ------>
-    <div class="col-md-6">
-      <p class="border rounded bg-light py-2 px-2">
-        <strong>Data :</strong>of (&#123;a: 'Anup', b: 'Shekhar', c: 'Sharma'&#125;)
-      </p>
-      <hr>
-      <ul>
-        <li><strong>a :</strong> {{obsMsg.a}}</li>
-        <li><strong>b :</strong> {{obsMsg.b}}</li>
-        <li><strong>c :</strong> {{obsMsg.c}}</li>
-      </ul>
+  </div>
+  <!----- Example-2 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Array</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>from (['Haresh', 'Parth', 'Rutvik'])
+        </p>
+        <ul id="elContainer5"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-3 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Promise</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>Promise to Observable Convert
+        </p>
+        <ul id="elContainer6"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-4 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Map</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>Map to Observable Convert
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-5 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Set</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>Promise to Observable Convert
+        </p>
+        <ul id="elContainer6"></ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-6 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Multiple Promises</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>Multiple Promises to Observable Convert
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!----- Example-7 ------>
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">Iterable Object</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Data : </strong>Iterable Object to Observable Convert
+        </p>
+        <ul>
+          <li class="text-danger">view in console</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

@@ -7,7 +7,7 @@ export class UtilityOperatorService {
 
   constructor() { }
 
-  printLi(val: string, container: string) {
+  printLi(val: any, container: string) {
     let el = document.createElement('li');
     el.innerText = val;
     document.getElementById(container)?.appendChild(el);
