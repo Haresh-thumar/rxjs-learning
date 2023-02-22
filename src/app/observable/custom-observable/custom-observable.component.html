@@ -1,0 +1,43 @@
+<h1 class="mb-0 mt-5">Custom-Observable</h1>
+<br>
+
+<!-------------------------------------------------------------------
+                        Custom-Observable
+-------------------------------------------------------------------->
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Manual Data Emit</div>
+      <div class="card-body">
+        <ul [ngClass]="techStatus == 'completed' ? 'completed' : techStatus == 'error' ? 'error' : ''" class="tech-list"
+          id="elContainer"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Custom Interval Observable</div>
+      <div class="card-body">
+        <ul [ngClass]="techStatus2 == 'completed' ? 'completed' : techStatus2 == 'error' ? 'error' : ''"
+          class="tech-list" id="elContainer2"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">Random Names</div>
+      <div class="card-body">
+        <p class="border rounded bg-light py-2 px-2">
+          <strong>Random Names : </strong>'anup', 'shekhar', 'sharma', 'Haresh', 'John', 'Alex', 'Robert'
+        </p>
+        <p>Current Name : <strong class="text-success">{{names}}</strong></p>
+        <span class="badge"
+          [ngClass]="nameStatus == 'completed' ? 'badge-success' : nameStatus == 'error' ? 'badge-danger': 'badge-primary'">
+          {{nameStatus == 'completed' ? 'Success' : nameStatus == 'error' ? 'Error' : 'Running'}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

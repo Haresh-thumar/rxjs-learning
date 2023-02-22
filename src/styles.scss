@@ -16,3 +16,49 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
+.card {
+  border: 1px solid rgb(255, 29, 153);
+  margin: 15px;
+}
+
+.card-header {
+  color: rgb(255, 29, 153);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(255, 224, 241);
+  border-bottom: 1px solid rgb(255, 29, 153);
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+
+/*-------- Custom-Observable css ----------*/
+// .tech-list {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .tech-list li {
+//   background-color: #f8f8f8;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   padding: 8px 13px;
+//   margin-bottom: 10px;
+// }
+
+// .tech-list.error li {
+//   color: orangered;
+//   background: rgba(255, 0, 0, 0.15);
+//   border: 1px solid orangered;
+// }
+
+// .tech-list.completed li {
+//   color: #00bb06;
+//   background: rgba(61, 216, 0, 0.15);
+//   border: 1px solid #3dd843;
+// }

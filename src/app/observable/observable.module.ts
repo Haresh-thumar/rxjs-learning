@@ -7,6 +7,7 @@ import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ToArrayComponent } from './to-array/to-array.component';
     FromEventComponent,
     IntervalComponent,
     OfFromComponent,
-    ToArrayComponent
+    ToArrayComponent,
+    CustomObservableComponent
   ],
   imports: [
     CommonModule,

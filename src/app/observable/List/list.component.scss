@@ -23,13 +23,14 @@ ul.list {
       text-decoration: none;
       justify-content: center;
       align-items: center;
+      border: 1px solid #6296bb;
 
       &:hover {
         background: #e3f2fd;
         color: #477698;
         box-shadow: 0 0 10px #b3cada;
         text-decoration: none;
-        border: 1px solid #6296bb;
+
       }
     }
   }

@@ -5,6 +5,7 @@ import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'interval', component: IntervalComponent },
   { path: 'of-from', component: OfFromComponent },
   { path: 'toArray', component: ToArrayComponent },
+  { path: 'custom-Obs', component: CustomObservableComponent },
 ];
 
 @NgModule({
