@@ -6,6 +6,7 @@ import { ListComponent } from './List/list.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
 import { OfFromComponent } from './of-from/of-from.component';
+import { ToArrayComponent } from './to-array/to-array.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { OfFromComponent } from './of-from/of-from.component';
     ListComponent,
     FromEventComponent,
     IntervalComponent,
-    OfFromComponent
+    OfFromComponent,
+    ToArrayComponent
   ],
   imports: [
     CommonModule,
