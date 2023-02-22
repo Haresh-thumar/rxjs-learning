@@ -7,6 +7,7 @@ import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 import { MapComponent } from './map/map.component';
+import { PluckComponent } from './pluck/pluck.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'toArray', component: ToArrayComponent },
   { path: 'custom-Obs', component: CustomObservableComponent },
   { path: 'map', component: MapComponent },
+  { path: 'pluck', component: PluckComponent },
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilityOperatorService } from '../../services/utility-operator.service';
-import { Observable, count, from, of } from 'rxjs';
+import { from, of } from 'rxjs';
 
 @Component({
   selector: 'app-of-from',
