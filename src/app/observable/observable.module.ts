@@ -10,6 +10,7 @@ import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 import { MapComponent } from './map/map.component';
 import { PluckComponent } from './pluck/pluck.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PluckComponent } from './pluck/pluck.component';
     ToArrayComponent,
     CustomObservableComponent,
     MapComponent,
-    PluckComponent
+    PluckComponent,
+    FilterComponent
   ],
   imports: [
     CommonModule,

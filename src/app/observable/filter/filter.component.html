@@ -1,9 +1,10 @@
-<h1 class="mb-0 mt-5">Pluck</h1>
+<h1 class="mb-0 mt-5">Filter</h1>
 <br>
 
 
+
 <!-------------------------------------------------------------------
-                        Pluck
+                              Filter
 -------------------------------------------------------------------->
 <div class="row">
 
@@ -12,17 +13,19 @@
       <div class="card-header">Example-1</div>
       <div class="card-body">
         <p class="border rounded bg-light py-2 px-2">
-          <strong>Pluck : </strong>simple pluck data
+          <strong>Filter : </strong>by Length
         </p>
         <table class="table">
           <thead>
             <tr>
+              <th>Id</th>
               <th>Name</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let items of userData">
-              <td>{{items}}</td>
+            <tr *ngFor="let items of data">
+              <td>{{items.id}}</td>
+              <td>{{items.name}}</td>
             </tr>
           </tbody>
         </table>
@@ -35,17 +38,21 @@
       <div class="card-header">Example-2</div>
       <div class="card-body">
         <p class="border rounded bg-light py-2 px-2">
-          <strong>Pluck : </strong>pluck with Nested Property
+          <strong>Filter : </strong>by Gender
         </p>
         <table class="table">
           <thead>
             <tr>
+              <th>Id</th>
               <th>Name</th>
+              <th>Gender</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let items of userData2">
-              <td>{{items}}</td>
+            <tr *ngFor="let items of data2">
+              <td>{{items.id}}</td>
+              <td>{{items.name}}</td>
+              <td>{{items.gender}}</td>
             </tr>
           </tbody>
         </table>
@@ -58,17 +65,20 @@
       <div class="card-header">Example-3</div>
       <div class="card-body">
         <p class="border rounded bg-light py-2 px-2">
-          <strong>Pluck : </strong>pluck with Nested in Nested Property
+          <strong>Filter : </strong>by nth Item
         </p>
         <table class="table">
           <thead>
             <tr>
-              <th>Job Location</th>
+              <th>Id</th>
+              <th>Name</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let items of userData3">
-              <td>{{items}}</td>
+            <tr *ngFor="let items of data3">
+              <td>{{items.id}}</td>
+              <td>{{items.name}}</td>
+              <td>{{items.gender}}</td>
             </tr>
           </tbody>
         </table>
