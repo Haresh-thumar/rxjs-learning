@@ -19,6 +19,7 @@ import { PromiseComponent } from './promise/promise.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
 import { ObservableComponent } from './observable/observable.component';
 import { ObservableModule } from './observable/observable.module';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ObservableModule } from './observable/observable.module';
     MatIconModule,
     MatButtonModule,
     MatBadgeModule,
-    ObservableModule
+    ObservableModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
