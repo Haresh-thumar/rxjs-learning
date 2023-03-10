@@ -12,6 +12,7 @@ import { MapComponent } from './map/map.component';
 import { PluckComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
+import { TakeComponent } from './take/take.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TapComponent } from './tap/tap.component';
     MapComponent,
     PluckComponent,
     FilterComponent,
-    TapComponent
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     CommonModule,
