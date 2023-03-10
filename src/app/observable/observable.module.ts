@@ -13,6 +13,7 @@ import { PluckComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
+import { RetryComponent } from './retry/retry.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TakeComponent } from './take/take.component';
     PluckComponent,
     FilterComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent
   ],
   imports: [
     CommonModule,
