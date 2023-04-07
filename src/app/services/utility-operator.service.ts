@@ -14,10 +14,13 @@ export class UtilityOperatorService {
     document.getElementById(container)?.appendChild(el);
   }
 
-
   getData() {
     return this.http.get<user[]>('https://jsonplaceholder.typicode.com/users');
   }
+
+  // getAlbums() {
+  //   return this.http.get('https://jsonplaceholder.typicode.com/albums');
+  // }
 }
 
 

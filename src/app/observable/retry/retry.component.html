@@ -1,119 +1,41 @@
 <h1 class="mb-0 mt-5">Retry, RetryWhen, Scan & Delay</h1>
 <br>
 
-<h2 class="mb-0 mt-5">Retry</h2>
+<h2 class="mb-0 mt-5">Retry, RetryWhen, Scan & Delay</h2>
 <!-------------------------------------------------------------------
                                 Retry
 -------------------------------------------------------------------->
 <div class="row">
   <!---- Example-1 ---->
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="card">
       <div class="card-header">Example-1</div>
       <div class="card-body">
         <p class="border rounded bg-light py-2 px-2">
           <strong>Take : max 5 Data</strong>
         </p>
-        <ul id="elContainer"></ul>
-      </div>
-    </div>
-  </div>
-
-  <!---- Example-2 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-2</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take : First 5 Data Print From Observable Stream</strong>
+        <button class="btn btn-primary" (click)="getAlbums()" type="button">
+          <span class="spinner-border spinner-border-sm" *ngIf="fetchingData"></span>
+          {{fetchingData ? 'Fetching...' : 'Fetch Data'}}
+        </button>
+        <br><br>
+        <p>
+          Status : <strong
+            [ngClass]="{'text-success' : status == 'Data Fetching SuccessFully', 'text-danger' : status == 'Data Fetching Problem'}">{{status}}</strong>
+          <span class="spinner-grow text-warning spinner-grow-sm" role="status" *ngIf="fetchingData">
+            <span class="sr-only">Loading...</span>
+          </span>
         </p>
-        <ul id="elContainer2"></ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<h2 class="mb-0 mt-5">RetryWhen</h2>
-<!-------------------------------------------------------------------
-                              RetryWhen
--------------------------------------------------------------------->
-<div class="row">
-  <!---- Example-1 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-1</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take-Last : Last 5 Data Print From Observable Stream</strong>
-        </p>
-        <ul id="elContainer3"></ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<h2 class="mb-0 mt-5">Scan</h2>
-<!-------------------------------------------------------------------
-                              Scan
--------------------------------------------------------------------->
-<div class="row">
-  <!---- Example-1 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-1</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take-Until : Get 5 Data After automatic Unsubscribe Observable Stream</strong>
-        </p>
-        <ul id="elContainer4"></ul>
-      </div>
-    </div>
-  </div>
-  <!---- Example-2 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-2</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take-Until : AnyWhere Outside Click (using event) to Unsubscribe Observable Stream</strong>
-        </p>
-        <ul id="elContainer5"></ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<h2 class="mb-0 mt-5">Delay</h2>
-<!-------------------------------------------------------------------
-                              Delay
--------------------------------------------------------------------->
-<div class="row">
-  <!---- Example-1 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-1</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take-Until : Get 5 Data After automatic Unsubscribe Observable Stream</strong>
-        </p>
-        <ul id="elContainer4"></ul>
-      </div>
-    </div>
-  </div>
-  <!---- Example-2 ---->
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-header">Example-2</div>
-      <div class="card-body">
-        <p class="border rounded bg-light py-2 px-2">
-          <strong>Take-Until : AnyWhere Outside Click (using event) to Unsubscribe Observable Stream</strong>
-        </p>
-        <ul id="elContainer5"></ul>
+        <!-- <ul id="elContainer"></ul> -->
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let data of dataAry">
+              <td>{{data.id}}</td>
+              <td>{{data.userId}}</td>
+              <td>{{data.title}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
