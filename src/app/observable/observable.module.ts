@@ -15,7 +15,7 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distincuntilchanged/debounce-time-distincuntilchanged.component';
-import { NgxUiLoaderHttpModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+
 
 
 @NgModule({
@@ -32,11 +32,11 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
     TapComponent,
     TakeComponent,
     RetryComponent,
-    DebounceTimeDistincuntilchangedComponent
+    DebounceTimeDistincuntilchangedComponent,
   ],
   imports: [
     CommonModule,
-    ObservableRoutingModule
+    ObservableRoutingModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

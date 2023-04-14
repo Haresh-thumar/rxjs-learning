@@ -20,6 +20,7 @@ import { AsyncAwaitComponent } from './async-await/async-await.component';
 import { ObservableComponent } from './observable/observable.component';
 import { ObservableModule } from './observable/observable.module';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatButtonModule,
     MatBadgeModule,
     ObservableModule,
-    MatTooltipModule
+    MatTooltipModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({ showForeground: true, })
   ],
   providers: [],
   bootstrap: [AppComponent],

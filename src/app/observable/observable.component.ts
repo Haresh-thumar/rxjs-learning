@@ -1,4 +1,5 @@
 import { AfterContentInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { Observable, from, fromEvent } from 'rxjs';
 
 @Component({
@@ -7,6 +8,7 @@ import { Observable, from, fromEvent } from 'rxjs';
   styleUrls: ['./observable.component.scss']
 })
 export class ObservableComponent implements OnInit, AfterContentInit {
+  constructor(private loader: NgxUiLoaderService) { }
 
   ngOnInit(): void { }
 
