@@ -15,5 +15,9 @@ export class DesignUtilityService {
   /*------- Behivour-Subject --------*/
   BehivourSubjectValue = new BehaviorSubject<string>('123');
 
+
+  /*------- Cross Component Communication Subject -------*/
+  crossCompoCommunication = new Subject<string>();
+
   constructor() { }
 }

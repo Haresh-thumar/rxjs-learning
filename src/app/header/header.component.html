@@ -1,6 +1,7 @@
 <mat-toolbar color="primary">
   <span>RXJS Series</span>
-  <span class="badge text-bg-danger ms-3" *ngIf="exclusive">Haresh</span>
+  <span class="badge badge-warning ml-5 p-2" *ngIf="exclusive">Haresh</span>
+  <span class="badge badge-success ml-5 p-2" *ngIf="CrossCompoData">{{CrossCompoData}}</span>
   <span class="example-spacer"></span>
   <button mat-raised-button class="mr-2" routerLink="async-await">Async-Await</button>
   <button mat-raised-button class="mr-2" routerLink="promise">Promise</button>

@@ -15,6 +15,8 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distincuntilchanged/debounce-time-distincuntilchanged.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { SubjectComponent } from './subject/subject.component';
 
 
 
@@ -33,6 +35,8 @@ import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distin
     TakeComponent,
     RetryComponent,
     DebounceTimeDistincuntilchangedComponent,
+    ConcatMapComponent,
+    SubjectComponent,
   ],
   imports: [
     CommonModule,

@@ -13,6 +13,8 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distincuntilchanged/debounce-time-distincuntilchanged.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { SubjectComponent } from './subject/subject.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'take', component: TakeComponent },
   { path: 'retry', component: RetryComponent },
   { path: 'DebounceTime-Distincuntilchanged', component: DebounceTimeDistincuntilchangedComponent },
+  { path: 'concatMap', component: ConcatMapComponent },
+  { path: 'Subject', component: SubjectComponent },
 ];
 
 @NgModule({
