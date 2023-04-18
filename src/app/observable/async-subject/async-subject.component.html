@@ -1,0 +1,42 @@
+<h1 class="mb-0 mt-5">Async-Subject</h1>
+<br>
+
+<!--------------------------------------------------------------------------------------------
+                                            Example-1
+  --------------------------------------------------------------------------------------------->
+<div class="row">
+  <div class="col">
+    <h2 class="font-weight-bold">Add Video</h2>
+  </div>
+</div>
+
+<hr>
+<div class="row justify-content-center align-items-center">
+  <div class="col-md-4">
+    <input type="text" class="form-control border border-primary" #video>
+  </div>
+  <div class="col-md-3">
+    <div class="btn btn-primary" (click)="onVideoAdd(video.value)">Add Value</div>
+  </div>
+</div>
+<br>
+<hr>
+
+<div class="row mt-5">
+  <!------------- Column-1 ------------->
+  <div class="col-md-4 border border-success p-3">
+    <h2 class="text-primary"><strong>User - 01</strong></h2>
+    <hr>
+    <ul class="video-list">
+      <li><strong>Video :</strong> {{asyncDataValue}}</li>
+    </ul>
+  </div>
+  <!------------- Column-2 ------------->
+  <div class="col-md-4 border border-success p-3">
+    <h2 class="text-primary"><strong>Click to Complete</strong></h2>
+    <hr>
+    <div class="btn btn-success" (click)="onComplete()">
+      Complete Subscription
+    </div>
+  </div>
+</div>

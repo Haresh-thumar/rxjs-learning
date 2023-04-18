@@ -17,6 +17,9 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SubjectComponent } from './subject/subject.component';
 import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
 import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -36,6 +39,9 @@ const routes: Routes = [
   { path: 'Subject', component: SubjectComponent },
   { path: 'behaviour-sbj', component: BehaviourSubjectComponent },
   { path: 'reply-subject', component: ReplySubjectComponent },
+  { path: 'async-subject', component: AsyncSubjectComponent },
+  { path: 'concat', component: ConcatComponent },
+  { path: 'merge', component: MergeComponent },
 ];
 
 @NgModule({

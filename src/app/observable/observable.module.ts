@@ -19,6 +19,9 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SubjectComponent } from './subject/subject.component';
 import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
 import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
 
 
 
@@ -41,6 +44,9 @@ import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
     SubjectComponent,
     BehaviourSubjectComponent,
     ReplySubjectComponent,
+    AsyncSubjectComponent,
+    ConcatComponent,
+    MergeComponent,
   ],
   imports: [
     CommonModule,
