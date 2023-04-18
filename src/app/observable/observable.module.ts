@@ -17,6 +17,8 @@ import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distincuntilchanged/debounce-time-distincuntilchanged.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SubjectComponent } from './subject/subject.component';
+import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
+import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 
 
 
@@ -37,6 +39,8 @@ import { SubjectComponent } from './subject/subject.component';
     DebounceTimeDistincuntilchangedComponent,
     ConcatMapComponent,
     SubjectComponent,
+    BehaviourSubjectComponent,
+    ReplySubjectComponent,
   ],
   imports: [
     CommonModule,

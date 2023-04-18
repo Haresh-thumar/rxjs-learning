@@ -15,6 +15,8 @@ import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeDistincuntilchangedComponent } from './debounce-time-distincuntilchanged/debounce-time-distincuntilchanged.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SubjectComponent } from './subject/subject.component';
+import { BehaviourSubjectComponent } from './behaviour-subject/behaviour-subject.component';
+import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -32,6 +34,8 @@ const routes: Routes = [
   { path: 'DebounceTime-Distincuntilchanged', component: DebounceTimeDistincuntilchangedComponent },
   { path: 'concatMap', component: ConcatMapComponent },
   { path: 'Subject', component: SubjectComponent },
+  { path: 'behaviour-sbj', component: BehaviourSubjectComponent },
+  { path: 'reply-subject', component: ReplySubjectComponent },
 ];
 
 @NgModule({
