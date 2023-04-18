@@ -1,1 +1,56 @@
-<p>reply-subject works!</p>
+<div class="my-3">
+  <h1>Reply Subject</h1>
+  <br>
+  <div class="row">
+    <div class="col">
+      <h2 class="font-weight-bold">{{methodInterval ? 'Interval Started...' : 'Add Video'}}</h2>
+    </div>
+    <div class="col text-right">
+      <button class="btn btn-warning" (click)="toggleMethod()">Toggle</button>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row justify-content-center align-items-center" *ngIf="!methodInterval">
+    <div class="col-md-4">
+      <input type="text" class="form-control border border-primary" #video>
+    </div>
+    <div class="col-md-3">
+      <div class="btn btn-primary" (click)="onVideoAdd(video.value)">Add Value</div>
+    </div>
+  </div>
+  <hr *ngIf="methodInterval">
+
+  <div class="row mt-5">
+    <!------------- Column-1 ------------->
+    <div class="col-md-4 border border-success p-3">
+      <h2 class="text-center text-danger"><strong>User - 01</strong></h2>
+      <hr>
+      <ul class="video-list">
+        <li *ngFor="let item1 of userList1"><strong>Video :</strong> {{item1}}</li>
+      </ul>
+    </div>
+    <!------------- Column-1 ------------->
+    <div class="col-md-4 border border-success p-3">
+      <h2 class="text-center text-danger"><strong>User - 02</strong></h2>
+      <hr>
+      <ul class="video-list">
+        <li *ngFor="let item2 of userList2"><strong>Video :</strong> {{item2}}</li>
+      </ul>
+      <div class="btn" [ngClass]="subscribeMode2 ? 'btn-danger' : 'btn-success'" (click)="user2Subscribe()">
+        {{subscribeMode2 ? 'unSubscribe 2' : 'Subscribe 2'}}
+      </div>
+    </div>
+    <!------------- Column-1 ------------->
+    <div class="col-md-4 border border-success p-3">
+      <h2 class="text-center text-danger"><strong>User - 03</strong></h2>
+      <hr>
+      <ul class="video-list">
+        <li *ngFor="let item3 of userList3"><strong>Video :</strong> {{item3}}</li>
+      </ul>
+      <div class="btn" [ngClass]="subscribeMode3 ? 'btn-danger' : 'btn-success'" (click)="user3Subscribe()">
+        {{subscribeMode3 ? 'unSubscribe 3' : 'Subscribe 3'}}
+      </div>
+    </div>
+  </div>
+</div>
