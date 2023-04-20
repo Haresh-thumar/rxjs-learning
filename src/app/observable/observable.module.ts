@@ -22,6 +22,7 @@ import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
 
 
 
@@ -47,6 +48,7 @@ import { MergeComponent } from './merge/merge.component';
     AsyncSubjectComponent,
     ConcatComponent,
     MergeComponent,
+    MergeMapComponent,
   ],
   imports: [
     CommonModule,
