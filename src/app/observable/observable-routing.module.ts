@@ -21,6 +21,7 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
+import { MobileNotificationUsingConcatMapComponent } from './mobile-notification-using-concat-map/mobile-notification-using-concat-map.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'concat', component: ConcatComponent },
   { path: 'merge', component: MergeComponent },
   { path: 'mergeMap', component: MergeMapComponent },
+  { path: 'mobileNotification', component: MobileNotificationUsingConcatMapComponent },
 ];
 
 @NgModule({

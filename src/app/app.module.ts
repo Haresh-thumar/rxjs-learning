@@ -33,7 +33,7 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
     Compo3Component,
     PromiseComponent,
     AsyncAwaitComponent,
-    ObservableComponent
+    ObservableComponent,
   ],
   imports: [
     BrowserModule,
