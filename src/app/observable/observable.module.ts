@@ -24,6 +24,7 @@ import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { MobileNotificationUsingConcatMapComponent } from './mobile-notification-using-concat-map/mobile-notification-using-concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 
 
@@ -51,6 +52,7 @@ import { MobileNotificationUsingConcatMapComponent } from './mobile-notification
     MergeComponent,
     MergeMapComponent,
     MobileNotificationUsingConcatMapComponent,
+    SwitchMapComponent,
   ],
   imports: [
     CommonModule,

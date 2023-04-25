@@ -22,6 +22,7 @@ import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { MobileNotificationUsingConcatMapComponent } from './mobile-notification-using-concat-map/mobile-notification-using-concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'merge', component: MergeComponent },
   { path: 'mergeMap', component: MergeMapComponent },
   { path: 'mobileNotification', component: MobileNotificationUsingConcatMapComponent },
+  { path: 'switchMap', component: SwitchMapComponent },
 ];
 
 @NgModule({
