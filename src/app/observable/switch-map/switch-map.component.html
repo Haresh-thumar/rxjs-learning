@@ -1,2 +1,46 @@
 <h1 class="mb-0 mt-5">Switch-Map</h1>
 <br>
+
+<section class="container">
+  <h2>Search Videos :</h2>
+
+  <form #itemForm="ngForm">
+    <div>
+      <input type="text" class="form-control form-control-lg" placeholder="Search Term..." ngModel required
+        autocomplete="off">
+    </div>
+  </form>
+
+  <br>
+  <hr>
+
+  <div class="result">
+    <div class="d-flex">
+      <h2>Search Result</h2>
+      <span class="ml-auto text-muted">5 Results Found...</span>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="text-primary">#</th>
+          <th class="text-primary">Thumbnail</th>
+          <th class="text-primary">Title & Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="w-100">
+          <th class="w-5">1</th>
+          <td class="w-15">
+            <img src="https://i3.ytimg.com/vi/BH5NPH6QBXc/maxresdefault.jpg" class="thumbnail-img">
+          </td>
+          <td>
+            <strong>FromEvent Rxjs Operator | Create Stream with FromEvent | Rxjs Series</strong>
+            <p class="mt-1">In This Video You will Learn about How to Create Stream with FromEvent( ) Operator. Follow
+              this video to
+              know more about.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

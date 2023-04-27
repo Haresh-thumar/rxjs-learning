@@ -1,0 +1,144 @@
+{
+  "Playlist": [
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/BH5NPH6QBXc/maxresdefault.jpg",
+      "title": "FromEvent Rxjs Operator | Create Stream with FromEvent | Rxjs Series",
+      "description": "In This Video You will Learn about How to Create Stream with FromEvent( ) Operator. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/sjFkkUwv4_k/maxresdefault.jpg",
+      "title": "of and from Operator in Rxjs | Rxjs Observable Streams | Rxjs Tutorial in Hindi",
+      "description": "In This Video You will Learn about How to Create Stream with of( ) and from( ) Operator. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/DumuLATsHnU/maxresdefault.jpg",
+      "title": "Custom Observable in Rxjs | Create Observable | Rxjs Tutorial in Hindi",
+      "description": "In This Video You will Learn how to create a Custom Observable in Rxjs. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/nE0Fdj5X_xM/maxresdefault.jpg",
+      "title": "Map in Rxjs | Rxjs Map Angular | Rxjs Tutorial in Hindi",
+      "description": "In This Video You will Learn how to use Map operator in Rxjs. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/dAmp4Sst5fc/maxresdefault.jpg",
+      "title": "Filter in Rxjs | Rxjs Filter Angular | Rxjs Tutorial in Hindi",
+      "description": "In This Video You will Learn how to use Filter operator in Rxjs. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/9n033dPwuGc/maxresdefault.jpg",
+      "title": "Http and Observables in Angular | Observables | Angular Tutorial in Hindi",
+      "description": "In This Video You will Learn about Http and Observables in Angular. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/JD4eAL8pkfI/maxresdefault.jpg",
+      "title": "Module Loading Strategy | Angular Modules | Angular 6/7/8+ Tutorial in Hindi",
+      "description": "In This Video You will Learn about Module Loading Strategy in Angular 8+. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/ukUwL2oVTbQ/maxresdefault.jpg",
+      "title": "Pre Loading in Angular | Angular Modules | Angular 6/7/8+ Tutorial in Hindi",
+      "description": "In This Video You will Learn about Pre Loading in Angular 8+. Follow this video to know more about."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/MJWZxaatAqs/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 7] - Backgrounds in CSS",
+      "description": "CSS background properties are used to define the background effects for elements."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/EyJ4O1bTrWM/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 9] - CSS Height and Width",
+      "description": "The height and width properties are used to set the height and width of an element."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/RtuxJVByGv4/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 12] - CSS Box Model",
+      "description": "All HTML elements can be considered as boxes. In CSS, the term box model is used when talking about design and layout."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/o7_dQG1CI_w/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 15] - CSS Fonts",
+      "description": "The CSS font properties define the font family, boldness, size, and the style of a text."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/vdRULGgNj7Q/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 19] - Box shadow",
+      "description": "The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas"
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/_Z8qsJj118k/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 23] - CSS Gradient",
+      "description": "CSS gradients let you display smooth transitions between two or more specified colors."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/cZYOc8Wi-R4/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 25] - CSS Resizable",
+      "description": "The resize property defines if (and how) an element is resizable by the user."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/uSf7hGf7uXA/maxresdefault.jpg",
+      "title": "CSS Tutorial in Hindi [Part 27] - CSS Tables",
+      "description": "In this video i will talk about Tables in CSS."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/C7Pf2gTfgP0/maxresdefault.jpg",
+      "title": "JavaScript Implementation Tutorial in Hindi",
+      "description": "In this tutorial you will learn how to implement javascript with html in Hindi, Urdu.You can learn how to write a code in javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/UHCHqInLg0M/maxresdefault.jpg",
+      "title": "JavaScript Variables Tutorial in Hindi",
+      "description": "In this tutorial you will learn how to use variable in javascript in Hindi, Urdu.You can learn how to store any value in variable and then reuse it as many times in javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/p7mBGmKl6xY/maxresdefault.jpg",
+      "title": "JavaScript Data Types Tutorial in Hindi",
+      "description": "In this tutorial you will learn about javascript data types in Hindi, Urdu.You can learn different data types like string, number, boolean, array, object , undefined which are used for javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/u5dGu62dbPc/maxresdefault.jpg",
+      "title": "JavaScript Comparison Operators Tutorial in Hindi",
+      "description": "In this tutorial you will learn javascript comparison operators with html in Hindi, Urdu.You can learn how to use and compare between two variables or values in javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/j6U4vfXuodw/maxresdefault.jpg",
+      "title": "JavaScript If Else Statement Tutorial in Hindi",
+      "description": "In this tutorial you will learn javascript If else statement in Hindi, Urdu.You can learn how to make a conditional if else statement in javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/j6U4vfXuodw/maxresdefault.jpg",
+      "title": "JavaScript Switch Case Tutorial in Hindi",
+      "description": "In this tutorial you will learn javascript switch case tutorial in Hindi, Urdu.You can learn how to use conditional switch case in javascript."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/wkSA9bfCmKU/maxresdefault.jpg",
+      "title": "Bootstrap CSS Framework Introduction Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap introduction tutorial in Hindi, Urdu.You can learn what is bootstrap framework, what are the advantages of bootstrap tutorial in hindi."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/ZPA9zl-QPmY/maxresdefault.jpg",
+      "title": "Bootstrap CSS Container & Row Class Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap container and row class tutorial in Hindi, Urdu.You can learn how to use bootstrap css container class and how to make rows in container tutorial in hindi."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/kuapP6l84o4/maxresdefault.jpg",
+      "title": "Bootstrap CSS Grid Col Class Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap grid col class tutorial in Hindi, Urdu.You can learn how to use bootstrap css grid col class and how to make different width div with grid col class tutorial in hindi."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/k7GDC00ZF1Q/maxresdefault.jpg",
+      "title": "Bootstrap CSS Nesting Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap nesting row and col tutorial in Hindi, Urdu.You can learn how to add nested coloumns in a row with bootstrap css framework tutorial in hindi."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/U8SF3HvjU9s/maxresdefault.jpg",
+      "title": "Bootstrap CSS Float & Clearfix Class Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap float and clearfix class tutorial in Hindi, Urdu.You can learn how to float class and width height classes of boostrap 4 tutorial in hindi."
+    },
+    {
+      "thumbnail": "https://i3.ytimg.com/vi/v3tUom4JVHA/maxresdefault.jpg",
+      "title": "Bootstrap Responsive Template Design Tutorial in Hindi",
+      "description": "In this tutorial you will learn bootstrap responsive template tutorial in Hindi, Urdu.You can learn how to make responsive website template with bootstrap 4 tutorial in hindi."
+    }
+  ]
+}

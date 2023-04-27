@@ -25,6 +25,7 @@ import { MergeComponent } from './merge/merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { MobileNotificationUsingConcatMapComponent } from './mobile-notification-using-concat-map/mobile-notification-using-concat-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -57,6 +58,7 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
   imports: [
     CommonModule,
     ObservableRoutingModule,
+    FormsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
