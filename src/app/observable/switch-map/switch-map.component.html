@@ -4,10 +4,12 @@
 <section class="container">
   <h2>Search Videos :</h2>
 
-  <form #itemForm="ngForm">
+  <form #searchForm="ngForm">
     <div>
-      <input type="text" class="form-control form-control-lg" placeholder="Search Term..." ngModel required
-        autocomplete="off">
+      <!-- <input type="text" class="form-control form-control-lg" placeholder="Search Term..." required
+        (keypress)="onSubmit($event)"> -->
+      <input type="text" class="form-control form-control-lg" placeholder="Search Term..." name="searchTerm" required
+        ngmodel>
     </div>
   </form>
 
