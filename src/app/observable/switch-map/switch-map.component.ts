@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
-import { FormControl, FormGroup, NgForm } from '@angular/forms';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, NgForm } from '@angular/forms';
+import { map, pluck } from 'rxjs';
 
 @Component({
   selector: 'app-switch-map',
@@ -8,23 +9,30 @@ import { FormControl, FormGroup, NgForm } from '@angular/forms';
 })
 export class SwitchMapComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('searchForm') searchForm?: NgForm;
+  myForm!: FormGroup;
+  formattedMessage?: string;
+  formBuilder: any;
 
-  constructor() { }
 
-  ngOnInit(): void { }
+  constructor(private _fb: FormBuilder) { }
 
-  ngAfterViewInit(): void {
-    const formValue = this.searchForm?.valueChanges;
-    formValue?.subscribe(res => {
-      console.log(res);
+  ngOnInit(): void {
+    this.myForm = new FormGroup({
+      name: new FormControl(),
     });
   }
 
-  // onSubmit(event: any) {
-  //   console.log(event.target.value);
-  // }
+  ngAfterViewInit(): void {
+    this.onChanges();
+  }
+
+  onChanges() {
+    this.myForm?.valueChanges.subscribe(val => {
+      this.formattedMessage = `Hello, My name is ${val.name}`;
+    });
+  }
 
 
 
-}
+
+};
