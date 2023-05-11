@@ -4,9 +4,11 @@
 <section class="container">
   <h2>Search Videos :</h2>
 
-  <form [formGroup]="myForm" (ngSubmit)="onChanges()">
-    <input type="text" class="form-control form-control-lg" placeholder="Search Term..." name="searchTerm" required
-      ngmodel autocomplete="off">
+  <form #searchForm="ngForm">
+    <label>
+      Name:
+      <input type="text" required name="searchterm" autocomplete="off" ngModel class="form-control w-100">
+    </label>
   </form>
 
   <br>
