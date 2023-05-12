@@ -1,10 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UtilityOperatorService {
+
+  playlistUrl: string = 'http://localhost:3000/Playlist';
 
   constructor(private http: HttpClient) { }
 
@@ -31,6 +34,11 @@ export class UtilityOperatorService {
   // getAlbums() {
   //   return this.http.get('https://jsonplaceholder.typicode.com/albums');
   // }
+
+
+  getPlaylist(searchterm: any): Observable<Search> {
+    return this.http.get<Search>(this.playlistUrl + '?q=rxjs' + searchterm);
+  }
 }
 
 
@@ -38,4 +46,11 @@ export interface user {
   name: string;
   id: number;
   email: string;
+}
+
+
+export interface Search {
+  thumbnail: string;
+  title: string;
+  description: string;
 }

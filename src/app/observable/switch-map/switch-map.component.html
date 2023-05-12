@@ -5,10 +5,8 @@
   <h2>Search Videos :</h2>
 
   <form #searchForm="ngForm">
-    <label>
-      Name:
-      <input type="text" required name="searchterm" autocomplete="off" ngModel class="form-control w-100">
-    </label>
+    <input type="text" required name="searchterm" placeholder="Search Here..." autocomplete="off" ngModel
+      class="form-control">
   </form>
 
   <br>
@@ -28,16 +26,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="w-100">
-          <th class="w-5">1</th>
+        <tr class="w-100" *ngFor="let item of searchResult; index as i">
+          <th class="w-5">{{i}}</th>
           <td class="w-15">
-            <img src="https://i3.ytimg.com/vi/BH5NPH6QBXc/maxresdefault.jpg" class="thumbnail-img">
+            <img src="{{item.thumbnail}}" class="thumbnail-img">
           </td>
           <td>
-            <strong>FromEvent Rxjs Operator | Create Stream with FromEvent | Rxjs Series</strong>
-            <p class="mt-1">In This Video You will Learn about How to Create Stream with FromEvent( ) Operator. Follow
-              this video to
-              know more about.</p>
+            <strong>{{item.title}}</strong>
+            <p class="mt-1">{{item.description}}</p>
           </td>
         </tr>
       </tbody>

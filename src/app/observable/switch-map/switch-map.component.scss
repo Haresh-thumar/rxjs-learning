@@ -2,6 +2,10 @@ input {
   border: 1px solid #6d6fe9;
 }
 
+.form-control:focus {
+  box-shadow: none;
+}
+
 .thumbnail-img {
   width: 120px;
   height: auto;
