@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UtilityOperatorService {
 
-  playlistUrl: string = 'http://localhost:3000/Playlist';
+  playlistUrl: string = 'http://localhost:3000/Playlist?q=';
 
   constructor(private http: HttpClient) { }
 
@@ -37,7 +37,7 @@ export class UtilityOperatorService {
 
 
   getPlaylist(searchterm: any): Observable<Search> {
-    return this.http.get<Search>(this.playlistUrl + '?q=rxjs' + searchterm);
+    return this.http.get<Search>(this.playlistUrl + searchterm);
   }
 }
 

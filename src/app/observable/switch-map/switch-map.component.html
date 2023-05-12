@@ -26,8 +26,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="w-100" *ngFor="let item of searchResult; index as i">
-          <th class="w-5">{{i}}</th>
+        <tr class="w-100" *ngFor="let item of searchResult; index as i;">
+          <th class="w-5">{{i + 1}}</th>
           <td class="w-15">
             <img src="{{item.thumbnail}}" class="thumbnail-img">
           </td>
